@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp -o c "$CFILE"
+export CFILE=main.c; cpp -o c "$CFILE"
