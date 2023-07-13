@@ -1,2 +1,17 @@
-#!/bin/bash
-gcc $CFILE
+#include <stdio.h>
+
+/**
+ * main - to print with printf
+ * Return: Always 0.
+ */
+
+int main(void)
+
+{
+
+	char str[] = "\"Programming is like building a multilingual puzzle";
+
+	puts(str);
+
+	return (0);
+}
