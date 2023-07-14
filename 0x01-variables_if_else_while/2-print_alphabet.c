@@ -13,6 +13,6 @@ int main(void)
 	int lwr;
 
 	for (lwr = 'a'; lwr <= 'z'; lwr++)
-		putchar(lwr);
+		putchar(lwr\n);
 	return (0);
 }
