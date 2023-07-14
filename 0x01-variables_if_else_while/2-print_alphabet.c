@@ -10,11 +10,13 @@
 
 int main(void)
 {
-	int lwr;
+	int lwr = 97;
 
-	for (lwr = 'a'; lwr <= 'z'; lwr++)
-		putchar(lwr);
-		putchar('\n');
+	while (lwr <=122)
+	{
+	putchar(lwr);
+	putchar("\n");
+	}
 
 	return (0);
 }
