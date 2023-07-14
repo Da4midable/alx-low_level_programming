@@ -12,16 +12,9 @@ int main(void)
 {
 	int lwr;
 
-	lwr = 'a';
-
-	while (lwr <= 'z')
-	{
-
-	lwr++;
-	putchar(lwr);
-
-	}
-	putchar("\n");
-
+	for (lwr = 'a'; lwr <= 'z'; lwr++)
+		putchar(lwr);
+				if (lwr == 'z')
+				putchar ('\n');
 	return (0);
 }
