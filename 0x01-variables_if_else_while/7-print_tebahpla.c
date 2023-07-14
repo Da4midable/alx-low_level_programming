@@ -14,7 +14,7 @@ int main(void)
 
 	lwr = 'z';
 
-	while (lwr <= 'a')
+	while (lwr >= 'a')
 	{
 		putchar(lwr);
 		lwr--;
