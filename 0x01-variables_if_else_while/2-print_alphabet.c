@@ -10,9 +10,11 @@
 
 int main(void)
 {
-	int lwr = 97;
+	int lwr;
 
-	while (lwr <= 122)
+	lwr = 'a';
+
+	while (lwr <= 'z')
 	{
 	putchar(lwr);
 	lwr++;
