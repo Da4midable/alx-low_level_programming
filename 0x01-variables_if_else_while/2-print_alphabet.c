@@ -12,9 +12,10 @@ int main(void)
 {
 	int lwr = 97;
 
-	while (lwr <=122)
+	while (lwr <= 122)
 	{
 	putchar(lwr);
+	lwr++;
 	putchar("\n");
 	}
 
