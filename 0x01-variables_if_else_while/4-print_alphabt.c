@@ -18,11 +18,10 @@ int main(void)
 	{
 
 	if (lwr != 'e' && lwr != 'q')
-	{
 		putchar(lwr);
-		lwr++;
+	lwr++;
 	}
-	}
-		putchar ('\n');
+	putchar ('\n');
+
 	return (0);
 }
