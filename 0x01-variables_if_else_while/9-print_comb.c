@@ -12,10 +12,10 @@ int main(void)
 {
 	int coms;
 
-	for (coms = 0; coms < 10; coms++)
+	for (coms = 0; coms <= 9; coms++)
 	{
 		putchar(coms + '0');
-	if (coms < 10)
+	if (coms < 9)
 	{
 		putchar(',');
 		putchar(' ');
