@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 
 /**
  * main - check the code
@@ -19,16 +20,16 @@ int h = 'h';
 int a = 'a';
 int r = 'r';
 
-		putchar(un);
-		putchar(p);
-		putchar(u);
-		putchar(t);
-		putchar(c);
-		putchar(h);
-		putchar(a);
-		putchar(r);
+		_putchar(un);
+		_putchar(p);
+		_putchar(u);
+		_putchar(t);
+		_putchar(c);
+		_putchar(h);
+		_putchar(a);
+		_putchar(r);
 
-putchar('\n');
+_putchar('\n');
 
 return (0);
 
