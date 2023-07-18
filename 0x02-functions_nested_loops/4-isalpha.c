@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _islower - displays true or false value for lowercase letters
+ * _isalpha - displays true or false value for lowercase letters
  * @c: the character to be checked
- * Return: int c
+ * Return: 0
  */
 
 int _isalpha(int c)
