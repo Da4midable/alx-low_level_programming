@@ -18,10 +18,9 @@ int itsi = 0;
 
 while (s[i])
 {
-if (s[i] == '-')
+if (s[i] == 45)
 {
 sign = -1;
-i++;
 }
 
 
