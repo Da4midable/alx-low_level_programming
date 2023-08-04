@@ -20,7 +20,7 @@ while (s[i])
 {
 if (s[i] == 45)
 {
-sign = -1;
+sign *= -1;
 }
 
 
