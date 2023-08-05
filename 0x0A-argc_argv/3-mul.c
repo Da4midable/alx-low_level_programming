@@ -14,9 +14,6 @@ int main(int argc, char *argv[])
 	int i = 0;
 	int j = 0;
 
-
-	for (; i < argc; i++)
-{
 	if (argc == 3)
 {
 	i = atoi(argv[1]);
@@ -30,6 +27,5 @@ int main(int argc, char *argv[])
 	return (1);
 }
 
-}
 	return (0);
 }
