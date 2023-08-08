@@ -41,5 +41,5 @@ char *_strdup(char *str)
 	nw[j] = '\0';
 
 	return (nw);
-	free(nw);
+
 }
