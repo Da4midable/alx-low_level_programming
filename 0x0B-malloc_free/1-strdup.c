@@ -28,6 +28,11 @@ char *_strdup(char *str)
 	return (NULL);
 	}
 
+	if (str == NULL)
+        {
+        return (NULL);
+        }
+
 
 	j = 0;
 
