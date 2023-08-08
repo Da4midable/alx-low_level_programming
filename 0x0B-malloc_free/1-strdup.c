@@ -10,8 +10,8 @@
 
 char *_strdup(char *str)
 {
-	int i = 0, j;
-	char *nw;
+	int i = 1, j;
+	char *nw = NULL;
 
 
 
@@ -28,10 +28,6 @@ char *_strdup(char *str)
 	return (NULL);
 	}
 
-	if (str == NULL)
-        {
-        return (NULL);
-        }
 
 
 	j = 0;
