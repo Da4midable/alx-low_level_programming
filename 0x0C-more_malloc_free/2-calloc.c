@@ -11,7 +11,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int *cast;
+	void *cast;
 
 	if (nmemb <= 0 || size <= 0)
 	{
