@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "dog.h"
 #include "main.h"
 
