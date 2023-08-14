@@ -106,3 +106,5 @@ void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
