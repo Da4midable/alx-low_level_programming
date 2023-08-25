@@ -1,25 +1,26 @@
+#ifndef LISTS_H
+#define LISTS_H
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <stddef.h>
 #include <string.h>
 
-#ifndef LISTS_H
-#define LISTS_H
-
 /**
- * struct dog - this a struct for an animal
- * @name: name argument
- * @age: age argument
- * @owner: owner argument
+ * struct list_s - this a struct for a linked list
+ * @str: string argument
+ * @len: length of string characters
+ * @next: pointer to next head node
  */
 
-	struct node {
-		char *str;
-		size_t len;
-		struct node* next;
+	struct list_s
+{
+	char *str;
+	unsigned int len;
+	struct list_s *next;
 };
 
-typedef struct node list_t;
+typedef struct list_s list_t;
 
 size_t print_list(const list_t *h);
 
