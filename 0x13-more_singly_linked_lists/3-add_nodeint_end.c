@@ -1,19 +1,19 @@
 #include "lists.h"
 
 /**
- * add_node_end - add nodes at the beginning of a linked list
+ * add_nodeint_end - add nodes at the beginning of a linked list
  * @head: This is the double pointer for changing value of first node
- * @str: This is the string to be duplicated
+ * @n: This is the integer element of the node to be appended
  * Return: current.
  */
 
-list_t *add_node_end(list_t **head, const char *str)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	list_t *end_node;
-	list_t *current;
+	listint_t *end_node;
+	listint_t *current;
 
 
-	end_node = (struct list_s *)malloc(sizeof(list_t));
+	end_node = (struct listint_s *)malloc(sizeof(listint_t));
 
 	if (end_node == NULL)
 	{
@@ -21,14 +21,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 
 
-	end_node->str = strdup(str);
+		end_node->n = n;
 
-	if (end_node->str == NULL)
-	{
-		free(end_node);
-		return (NULL);
-	}
-		end_node->len = strlen(str);
 		end_node->next = NULL;
 
 	if (*head == NULL)
