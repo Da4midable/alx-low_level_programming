@@ -9,7 +9,6 @@
 /**
  * struct list_s - this a struct for a linked list
  * @n: integer argument
- * @len: length of string characters
  * @next: pointer to next head node
  */
 
