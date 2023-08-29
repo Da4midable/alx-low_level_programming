@@ -8,20 +8,20 @@
 
 int pop_listint(listint_t **head)
 {
-	listint_t *current, *buffer;
+	listint_t *current;
+	int num;
 
 		current = *head;
 
-	if (current == NULL)
+	if (*head == NULL)
 	{
-		EXIT_FAILURE;
+		return (-1);
 	}
 	else
-	{
-		buffer = current;
-		current = current->next;
-		buffer = NULL;
-		free(buffer);
+	{	current = *head;
+		*head = current->next;
+		num = current->n;
+		free(current);
+		return (num);
 	}
-		return (current->n);
 }
