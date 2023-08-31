@@ -1,32 +1,28 @@
 #include "main.h"
 
 /**
-* _putbin - converts integers to binary
-* @n: the integer to be converted
-* Return: length
-*/
+ * binary_to_uint - converts binary to the unsigned integer
+ * @b: pointer to a string of 0 and 1 chars
+ * Return: conv.
+ */
 
-	int _putbin(unsigned int n)
+unsigned int binary_to_uint(const char *b)
 {
-	char buffer[32];
-	int length = 0;
-	int i;
+	unsigned int conv = 0, i = 0, len;
 
-	if (n == 0)
+	if (b == NULL)
+		return (0);
+
+	len = strlen(b);
+	while (i < len)
 	{
-	write(1, "0", 1);
-	return (1);
+		if (b[i] != '0' && b[i] != '1')
+			return (0);
+
+
+			conv += (b[i] - '0') * pow(2, len - i - 1);
+			i++;
 	}
 
-	while (n > 0)
-	{
-	buffer[length++] = n % 2 + '0';
-	n /= 2;
-	}
-
-	for (i = length - 1; i >= 0; i--)
-	{
-	write(1, &buffer[i], 1);
-	}
-	return (length);
+	return (conv);
 }

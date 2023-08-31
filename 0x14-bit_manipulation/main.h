@@ -1,10 +1,12 @@
-#ifndef _MAIN_
-#define _MAIN_
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
+#define BUFF_SIZE 1024
 
 
 unsigned int binary_to_uint(const char *b);
