@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
 
 #define BUFF_SIZE 1024
 
@@ -15,5 +14,6 @@ int get_bit(unsigned long int n, unsigned int index);
 int set_bit(unsigned long int *n, unsigned int index);
 int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
+int my_pow(int base, int exponent);
 
 #endif

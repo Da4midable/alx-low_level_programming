@@ -17,10 +17,11 @@ unsigned int binary_to_uint(const char *b)
 	while (i < len)
 	{
 		if (b[i] != '0' && b[i] != '1')
+		{
 			return (0);
+		}
 
-
-			conv += (b[i] - '0') * pow(2, len - i - 1);
+			conv += (b[i] - '0') * my_pow(2, len - i - 1);
 			i++;
 	}
 
