@@ -1,32 +1,30 @@
 #include "main.h"
 
 /**
-* print_binary - converts integers to binary
-* @n: the integer to be converted
-* Return: void
-*/
-
-	void print_binary(unsigned long int n)
-	{
-	char buffer[BUFF_SIZE];
-	int length = 0;
+ * print_binary - converts integers to binary
+ * @n: the integer to be converted
+ * Return: void
+ */
+void print_binary(unsigned long int n)
+{
 	int i;
 
 	if (n == 0)
 	{
-	_putchar('0');
-	return;
+		_putchar('0');
+		return;
 	}
 
-	while (n > 0)
+	for (i = BITS_IN_LONG - 1; i >= 0; i--)
 	{
-	buffer[length++] = n % 2 + '0';
-	n /= 2;
+		if ((n >> i) & 1)
+		{
+			break;
+		}
 	}
 
-	for (i = length - 1; i >= 0; i--)
+	for (; i >= 0; i--)
 	{
-	_putchar(buffer[i]);
+		_putchar((n >> i) & 1 ? '1' : '0');
 	}
-
-	}
+}

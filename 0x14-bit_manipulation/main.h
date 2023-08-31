@@ -5,6 +5,7 @@
 #include <stdio.h>
 
 #define BUFF_SIZE 1024
+#define BITS_IN_LONG (sizeof(unsigned long int) * 8)
 
 int _putchar(char c);
 int _strlen(const char *s);
