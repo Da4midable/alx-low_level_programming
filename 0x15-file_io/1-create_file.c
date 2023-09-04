@@ -10,32 +10,32 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int fl;
-	ssize_t bw = 0, len;
+	int file_descriptor;
+	ssize_t written_bytes = 0, data_len;
 
-	fl = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
+	file_descriptor = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 
-	if (fl == -1)
+	if (file_descriptor == -1)
 	{
 		return (-1);
 	}
 
 	if (text_content != NULL)
 	{
-		len = strlen(text_content);
+		data_len = strlen(text_content);
 
-		if (len > 0)
+		if (data_len > 0)
 		{
-			bw = write(fl, text_content, len);
+			written_bytes = write(file_descriptor, text_content, data_len);
 
-			if (bw == -1)
+			if (written_bytes == -1)
 			{
-				close(fl);
+				close(file_descriptor);
 				return (-1);
 			}
 		}
 	}
 
-	close(fl);
+	close(file_descriptor);
 	return (1);
 }
