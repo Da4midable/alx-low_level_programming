@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		dprintf(2, "Usage: %s file_from file_to\n", argv[0]);
 		exit(97);
 	}
-	
+
 	file_from = argv[1];
 	file_to = argv[2];
 	FD_VALUE = open(file_from, O_RDONLY);
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	FD2_VALUE = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 664);
+	FD2_VALUE = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
 	if (FD2_VALUE == -1)
 	{
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 
 	if (read_bytes == -1)
 	{
-       		dprintf(2, "Error: Read failed from %s\n", file_from);
+       		dprintf(2, "Error: Can't read from file %s\n", file_from);
         	exit(98);
     }
 
