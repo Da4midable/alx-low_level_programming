@@ -1,1 +1,0 @@
-This is a project on I/O in C Programming
