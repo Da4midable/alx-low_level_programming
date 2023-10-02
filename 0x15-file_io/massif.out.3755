@@ -1,0 +1,43 @@
+desc: (none)
+cmd: ./cp
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=143520
+mem_heap_B=4096
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=144885
+mem_heap_B=4096
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=peak
+n1: 4096 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48D9C23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48E8D5F: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E5A94: _IO_file_seekoff@@GLIBC_2.2.5 (fileops.c:937)
+    n1: 4096 0x48E7975: _IO_file_attach@@GLIBC_2.2.5 (fileops.c:371)
+     n1: 4096 0x48E32C1: __vdprintf_internal (iovdprintf.c:44)
+      n1: 4096 0x48BBB29: dprintf (dprintf.c:30)
+       n0: 4096 0x109262: main (3-cp.c:17)
+#-----------
+snapshot=3
+#-----------
+time=144885
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

@@ -6,6 +6,8 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
+#include <elf.h>
+
 #define BUFF_SIZE 1024
 
 int _putchar(char c);
