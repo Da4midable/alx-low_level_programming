@@ -1,0 +1,1 @@
+A project exploring dynamic libraries and their application
